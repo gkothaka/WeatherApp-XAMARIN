@@ -1,0 +1,16 @@
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\bin\Debug\netstandard2.0\WeatherApp-GouthamiXamarinForms.deps.json
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\bin\Debug\netstandard2.0\WeatherApp-GouthamiXamarinForms.dll
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\bin\Debug\netstandard2.0\WeatherApp-GouthamiXamarinForms.pdb
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\obj\Debug\netstandard2.0\WeatherApp-GouthamiXamarinForms.csprojAssemblyReference.cache
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\obj\Debug\netstandard2.0\AddTodoItem.xaml.g.cs
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\obj\Debug\netstandard2.0\DetailTodoItem.xaml.g.cs
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\obj\Debug\netstandard2.0\TodoListView.xaml.g.cs
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\obj\Debug\netstandard2.0\WeatherApp-GouthamiXamarinForms.csproj.CoreCompileInputs.cache
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\obj\Debug\netstandard2.0\WeatherApp-GouthamiXamarinForms.AssemblyInfoInputs.cache
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\obj\Debug\netstandard2.0\WeatherApp-GouthamiXamarinForms.AssemblyInfo.cs
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\obj\Debug\netstandard2.0\WeatherApp-GouthamiXamarinForms.csproj.Fody.CopyLocal.cache
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\obj\Debug\netstandard2.0\WeatherApp-GouthamiXamarinForms.dll
+C:\Users\gkothaka\source\repo\WeatherApp-Gouthami\TodoXamarinForms\obj\Debug\netstandard2.0\WeatherApp-GouthamiXamarinForms.pdb

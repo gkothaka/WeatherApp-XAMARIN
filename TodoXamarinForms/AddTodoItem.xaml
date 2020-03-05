@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TodoXamarinForms.AddTodoItem"
+             Title="Gouthami Add Item you wish to Remember">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+            <Label Text="Gouthami Add an Item you wish to Remember" BackgroundColor="#545454" VerticalOptions="StartAndExpand" HorizontalOptions="Center"/>
+            <Entry Placeholder="CITY" Text="{Binding TodoTitle}" MaxLength="30" BackgroundColor="RosyBrown" TextColor="BlanchedAlmond"/>
+            <Entry Placeholder="UNITS" Text="{Binding TodoDescription}"  BackgroundColor="RosyBrown" TextColor="BlanchedAlmond" />
+            <Entry Placeholder="Language" Text="{Binding TodoLanguage}"  BackgroundColor="RosyBrown" TextColor="BlanchedAlmond" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                <Button Text="Cancel" Command="{Binding Cancel}" BackgroundColor="PeachPuff"/>
+                <Button Text="Save" Command="{Binding Save}" BackgroundColor="PeachPuff"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

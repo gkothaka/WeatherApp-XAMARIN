@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:TodoXamarinForms"
+             mc:Ignorable="d"
+             x:Class="TodoXamarinForms.MainPage"
+             Title="{Binding Title}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="labelStyle" 
+                   TargetType="Label">
+                <Setter Property="FontSize" 
+                        Value="Small" />
+                <Setter Property="TextColor" 
+                        Value="Gray" />
+            </Style>
+
+            <Style x:Key="labelResultStyle" 
+                   TargetType="Label">
+                <Setter Property="FontSize" 
+                        Value="Medium" />
+                <Setter Property="Margin" 
+                        Value="10,0,0,0" />
+            </Style>
+
+            <local:LongToDateTimeConverter x:Key="longToDateTimeConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Grid BackgroundColor="#545454" 
+              Padding="0,0,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <StackLayout Orientation="Vertical">
+                <Label Text="Latest Weather Report" 
+                   Grid.ColumnSpan="3"
+                   HorizontalOptions="Center"
+                   TextColor="White" 
+                   FontAttributes="Bold" 
+                   FontSize="Medium" />
+            <!-- <StackLayout Orientation="Horizontal">
+                <Label Text="Units:" 
+                   Grid.Row="1" 
+                   VerticalOptions="Center"
+                   Style="{StaticResource labelStyle}"
+                   TextColor="#C0C0C0" />
+                <Label Text="{Binding Description}" 
+                       Style="{StaticResource labelResultStyle}" TextColor="#C0C0C0"  />
+
+            </StackLayout> -->
+            </StackLayout>
+
+            <Entry x:Name="_cityEntry"
+                   Grid.Row="1" 
+                   Grid.Column="1"
+                   Margin="5,0"
+                   VerticalOptions="Center"
+                   BackgroundColor="DarkGray"
+                   TextColor="White"
+                   Text="{Binding Title}"
+                   IsVisible="False"/>
+
+            <Entry x:Name="_uniEntry"
+                   Grid.Row="1" 
+                   Grid.Column="2"
+                   Margin="5,0"
+                   VerticalOptions="Center"
+                   BackgroundColor="DarkGray"
+                   TextColor="White"
+                   Text="{Binding Description}"
+                   IsVisible="False"/>
+
+            <Entry x:Name="_langEntry"
+                   Grid.Row="1" 
+                   Grid.Column="3"
+                   Margin="5,0"
+                   VerticalOptions="Center"
+                   BackgroundColor="DarkGray"
+                   TextColor="White"
+                   Text="{Binding Language}" 
+                   IsVisible="False"/>
+
+            <Button Grid.Row="1" 
+                    Grid.Column="4"
+                    Text="Get Weather" 
+                    BorderWidth="1"
+                    BorderColor="White"
+                    BackgroundColor="DarkGray"
+                    TextColor="White"
+                    Clicked="OnGetWeatherButtonClicked"
+                     IsVisible="False"/>
+        </Grid>
+
+        <ScrollView>
+            <StackLayout Padding="10">
+                <Label Text="Location" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Title}" 
+                       Style="{StaticResource labelResultStyle}" />
+
+                <Label Text="Temperature" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Main.Temperature}" 
+                       Style="{StaticResource labelResultStyle}" />
+
+                <Label Text="Wind Speed" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Wind.Speed}" 
+                       Style="{StaticResource labelResultStyle}" />
+
+                <Label Text="Humidity" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Main.Humidity}" 
+                       Style="{StaticResource labelResultStyle}" />
+
+                <Label Text="Visibility" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Weather[0].Visibility}" 
+                       Style="{StaticResource labelResultStyle}" />
+                <Label Text="Current Weather" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Weather[0].Description}" 
+                       Style="{StaticResource labelResultStyle}" />
+
+                <Label Text="Time of Sunrise" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Sys.Sunrise, Converter={StaticResource longToDateTimeConverter}}" 
+                       Style="{StaticResource labelResultStyle}" />
+
+                <Label Text="Time of Sunset" 
+                       Style="{StaticResource labelStyle}" />
+                <Label Text="{Binding Sys.Sunset, Converter={StaticResource longToDateTimeConverter}}" 
+                       Style="{StaticResource labelResultStyle}" />
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

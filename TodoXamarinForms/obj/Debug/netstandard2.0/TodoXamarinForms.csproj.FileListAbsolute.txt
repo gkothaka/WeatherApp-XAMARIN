@@ -1,0 +1,16 @@
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\bin\Debug\netstandard2.0\TodoXamarinForms.deps.json
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\bin\Debug\netstandard2.0\TodoXamarinForms.dll
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\bin\Debug\netstandard2.0\TodoXamarinForms.pdb
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\obj\Debug\netstandard2.0\TodoXamarinForms.csprojAssemblyReference.cache
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\obj\Debug\netstandard2.0\TodoXamarinForms.csproj.CoreCompileInputs.cache
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\obj\Debug\netstandard2.0\TodoXamarinForms.AssemblyInfoInputs.cache
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\obj\Debug\netstandard2.0\TodoXamarinForms.AssemblyInfo.cs
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\obj\Debug\netstandard2.0\TodoXamarinForms.dll
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\obj\Debug\netstandard2.0\TodoXamarinForms.pdb
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\obj\Debug\netstandard2.0\TodoListView.xaml.g.cs
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\obj\Debug\netstandard2.0\AddTodoItem.xaml.g.cs
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\obj\Debug\netstandard2.0\DetailTodoItem.xaml.g.cs
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\obj\Debug\netstandard2.0\TodoXamarinForms.csproj.Fody.CopyLocal.cache
+C:\Users\gkothaka\source\repo\TodoXamarinForms\TodoXamarinForms\obj\Debug\netstandard2.0\XamlC.stamp

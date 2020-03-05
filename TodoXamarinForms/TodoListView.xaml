@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:TodoXamarinForms"
+             mc:Ignorable="d"
+             x:Class="TodoXamarinForms.TodoListView"
+             Title="Gouthami IT-590 Final Exam">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:ChangeCompleteActionTextConverter x:Key="ChangeCompletedActionTextConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <ContentPage.ToolbarItems>
+       <!-- <ToolbarItem  Name =" iconexample" Text="Add Item" IconImageSource="icon.png" Priority="0" Order="Default" Command="{Binding AddItem}"/> -->
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <ListView ItemsSource="{Binding GroupedTodoList}"
+                      IsGroupingEnabled="True"
+                      GroupDisplayBinding="{Binding Key}"
+                      x:Name="TodoDisplayList" BackgroundColor="#EBE6DC"
+                     
+                      ItemSelected="OnListItemSelected">
+                <!--<listview.GroupHeaderTemplate-->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout  Padding="3,3,3,3" Orientation="Vertical" HorizontalOptions="Fill">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="City:" HorizontalOptions="Start"/>
+                                    <Label Text="{Binding Title}" HorizontalOptions="Start" TextColor="DarkMagenta"  />
+                                    <Label Text="Units:" HorizontalOptions="CenterAndExpand"/>
+                                    <Label Text="{Binding Description}" HorizontalOptions="Start" TextColor="Maroon"/>
+                                    <Label Text="Lang:" HorizontalOptions="EndAndExpand"/>
+                                    <Label Text="{Binding Language}" HorizontalOptions="End" TextColor="Navy"/>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Created Date:" HorizontalOptions="Start"/>
+                                    <!-- <Label Text="{Binding IsCompleted}" TextColor="Green"/> -->
+                                    <Label Text="{Binding TheDate}" HorizontalOptions="StartAndExpand" TextColor="Blue"/>
+                                </StackLayout>
+                            </StackLayout>
+                            <ViewCell.ContextActions>
+                                <MenuItem Command="{Binding Source={x:Reference TodoDisplayList}, Path=BindingContext.ChangeIsCompleted }"
+                                          CommandParameter="{Binding .}" Text="{Binding IsCompleted, Converter={StaticResource ChangeCompletedActionTextConverter}}" />
+                               <!-- <MenuItem Command="{Binding Source={x:Reference TodoDisplayList}, Path=BindingContext.Edit }" 
+                                          CommandParameter="{Binding .}" Text="Edit" Clicked="OnClick" /> -->
+                                <MenuItem Command="{Binding Source={x:Reference TodoDisplayList}, Path=BindingContext.Delete }" 
+                                          CommandParameter="{Binding .}" Text="Delete" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Command="{Binding AddItem}"  Text="Add Todo Item" BackgroundColor="Black" TextColor="BlanchedAlmond" BorderColor="HotPink" BorderWidth="5"/> 
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

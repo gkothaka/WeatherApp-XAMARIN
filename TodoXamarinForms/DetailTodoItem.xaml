@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TodoXamarinForms.DetailTodoItem">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+            <Label Text="Gouthami Add an Item you wish to Remember" BackgroundColor="MistyRose" VerticalOptions="StartAndExpand" HorizontalOptions="Center"/>
+            <Entry Text="{Binding Title}" MaxLength="30" BackgroundColor="RosyBrown" TextColor="BlanchedAlmond"/>
+            <Entry Text="{Binding Description}"  BackgroundColor="RosyBrown" TextColor="BlanchedAlmond" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+                <Button Text="Cancel" Clicked="OnCancelClicked" BackgroundColor="PeachPuff"/>
+                <Button Text="Save" Clicked="OnSaveClicked" BackgroundColor="PeachPuff"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
